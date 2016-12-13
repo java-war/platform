@@ -26,7 +26,7 @@ public class ConfigClientApplication {
 		SpringApplication.run(ConfigClientApplication.class, args);
 	}
 
-	@Value("${application.name}")
+	@Value("${spring.cloud.config.client.name}")
 	String name = "World";
 
 	@RequestMapping("/")
